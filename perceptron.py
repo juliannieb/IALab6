@@ -1,6 +1,11 @@
+import sys
 from random import choice
 from numpy import array, dot, random
-import sys
+from random import randint
+
+def get_random_position(data):
+	n = len(data)
+	return data[randint(0, n - 1)]
 
 def unit_step(x):
     if x < 0:
